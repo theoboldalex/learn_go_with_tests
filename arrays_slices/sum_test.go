@@ -33,8 +33,8 @@ func TestSumAllTails(t *testing.T) {
 		if !reflect.DeepEqual(result, expected) {
 			t.Errorf("Expected '%v' but got '%v'.", expected, result)
 		}
-
 	}
+
 	t.Run("sum the tails of some slices", func(t *testing.T) {
 		result := SumAllTails([]int{1, 2, 3}, []int{2, 3, 4, 5})
 		expected := []int{5, 12}
