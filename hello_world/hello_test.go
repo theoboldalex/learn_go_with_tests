@@ -7,7 +7,7 @@ func TestHello(t *testing.T) {
 		t.Helper()
 		if result != expected {
 			t.Errorf("Expected %q but got %q", expected, result)
-		} 	
+		}
 	}
 
 	t.Run("saying hello to people", func(t *testing.T) {
@@ -30,10 +30,10 @@ func TestHello(t *testing.T) {
 
 		assertCorrectMessage(t, expected, result)
 	})
-	 t.Run("saying hello in french", func(t *testing.T) {
-		 result := Hello("Claude", "french")
-		 expected := "Bonjour Claude"
+	t.Run("saying hello in french", func(t *testing.T) {
+		result := Hello("Claude", "french")
+		expected := "Bonjour Claude"
 
 		assertCorrectMessage(t, expected, result)
-	 })
+	})
 }
